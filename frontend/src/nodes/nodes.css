@@ -1,0 +1,79 @@
+/* nodes.css
+   Shared styling for every node card. Changing something here changes
+   the look of ALL nodes, since they all share the BaseNode component. */
+
+.node-card {
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e5ec;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 12px;
+  overflow: visible;
+  transition: box-shadow 0.15s ease;
+}
+
+.node-card:hover {
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.14);
+}
+
+.node-header {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.node-body {
+  padding: 10px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.node-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 11px;
+  color: #4b5563;
+}
+
+.node-field-label {
+  font-weight: 500;
+}
+
+.node-field input[type='text'],
+.node-field select,
+.node-field textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 5px 7px;
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  background: #f9fafb;
+}
+
+.node-field input[type='text']:focus,
+.node-field select:focus,
+.node-field textarea:focus {
+  border-color: #4f46e5;
+  background: #ffffff;
+}
+
+.node-field textarea {
+  resize: none;
+  min-height: 32px;
+  line-height: 1.4;
+}
+
+/* react-flow handle tweaks so they're easier to see/grab */
+.react-flow__handle {
+  width: 9px;
+  height: 9px;
+  background: #4f46e5;
+  border: 2px solid #ffffff;
+}
