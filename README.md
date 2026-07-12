@@ -1,4 +1,4 @@
-# VectorShift Technical Assessment
+# VectorShift Technical Assessment  !!
 
 This repository contains my submission for the **VectorShift Frontend Technical Assessment**. It includes a **React** frontend (pipeline/node editor) and a **Python/FastAPI** backend that validates whether the constructed pipeline forms a valid Directed Acyclic Graph (DAG).
 
@@ -90,3 +90,5 @@ The API will run at `http://localhost:8000`.
 ## 📄 License
 
 This project was built as part of a technical interview assessment and is provided for demonstration purposes.
+
+if the repo is helpfull to you so please don't forget to star !!
